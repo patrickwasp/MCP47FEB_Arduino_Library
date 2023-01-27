@@ -8,7 +8,7 @@
 
 const uint8_t kDefaultI2cAddress = 0x60;
 const uint8_t kMinDacValue = 0;
-const uint8_t kMaxDacValue = 4095;
+
 
 // Memory Map, each memory address is 16 bits wide
 //////////////////////////////////////////////////////
@@ -71,6 +71,19 @@ typedef enum PowerDownModes
   kOpenCircuit = 0b11
 };
 
+typedef enum DacResolution
+{
+  k8bit = 255,
+  k10bit = 1023,
+  k12bit = 4095
+};
+
+typedef enum ChannelCount
+{
+  k4 = 4,
+  k8 = 8
+};
+
 //inline uint8_t registerAddress(McpRegisters reg) noexcept
 //{
 //  return static_cast<uint8_t>(reg);
@@ -106,7 +119,7 @@ public:
 
     bool testConnection();
     bool resetI2c();
-    bool setAllVoltageReferenceSourceToVdd();
+    bool setAllVoltageReferenceSourcesToVdd();
     bool setAllVoltageReferenceSourceToBandGap();
     bool setAllGainsTo1x();
     bool setAllGainsTo2x();

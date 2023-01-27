@@ -8,7 +8,7 @@
 
 const uint8_t kDefaultI2cAddress = 0x60;
 const uint8_t kMinDacValue = 0;
-const uint8_t kMaxDacValue = 4095;
+const uint8_t kMaxDacValue = 255;
 
 // Memory Map, each memory address is 16 bits wide
 //////////////////////////////////////////////////////
@@ -69,6 +69,13 @@ typedef enum PowerDownModes
     k1kOhmPullDown = 0b01,
     k125kOhmPullDown = 0b10,
     kOpenCircuit = 0b11
+};
+
+typedef enum MaxDacValue
+{
+    k8bit = 255,
+    k10bit = 1023,
+    k12bit = 4095
 };
 
 // inline uint8_t registerAddress(McpRegisters reg) noexcept

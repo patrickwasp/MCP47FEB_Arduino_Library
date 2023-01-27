@@ -1,0 +1,24 @@
+const uint8_t kVolatileDac0Register = 0x00;
+const uint8_t kVolatileDac1Register = 0x01;
+const uint8_t kVolatileDac2Register = 0x02;
+const uint8_t kVolatileDac3Register = 0x03;
+const uint8_t kVolatileDac4Register = 0x04;
+const uint8_t kVolatileDac5Register = 0x05;
+const uint8_t kVolatileDac6Register = 0x06;
+const uint8_t kVolatileDac7Register = 0x07;
+const uint8_t kVolatileVRefRegister = 0x08;
+const uint8_t kVolatilePowerDownRegister = 0x09;
+const uint8_t kVolatileGainAndStatusRegister = 0x0A;
+const uint8_t kVolatileWiperLockStatusRegister = 0x0B;
+
+const uint8_t kNonVolatileDac0Register = 0x10;
+const uint8_t kNonVolatileDac1Register = 0x11;
+const uint8_t kNonVolatileDac2Register = 0x12;
+const uint8_t kNonVolatileDac3Register = 0x13;
+const uint8_t kNonVolatileDac4Register = 0x14;
+const uint8_t kNonVolatileDac5Register = 0x15;
+const uint8_t kNonVolatileDac6Register = 0x16;
+const uint8_t kNonVolatileDac7Register = 0x17;
+const uint8_t kNonVolatileVRefRegister = 0x18;
+const uint8_t kNonVolatilePowerDownRegister = 0x19;
+const uint8_t kNonVolatileGainAndStatusRegister = 0x1A;
